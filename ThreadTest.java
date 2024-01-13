@@ -1,4 +1,4 @@
-// Hi.java
+// ThreadTest.java
 // See https://github.com/fordsfords/learning_java
 
 import java.util.*;
