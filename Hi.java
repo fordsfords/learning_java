@@ -1,3 +1,6 @@
+// Hi.java
+// See https://github.com/fordsfords/learning_java
+
 import java.util.*;
 
 class Hi {
