@@ -16,9 +16,7 @@ class ThreadTest {
     MyThingie thingie = new MyThingie(2);
     thingie.start();
     System.out.println("main: Sleeping 4.1 seconds");
-    try {
-      Thread.sleep(4100);  // 4.1 sec
-    } catch (Exception e) {}
+    try { Thread.sleep(4100); } catch (Exception e) {}
     System.out.println("main: Terminating");
     thingie.terminate();
     System.out.println("main: Done");
@@ -63,9 +61,7 @@ class MyThingie implements Runnable {
         System.out.println("MyThingie: Hi");
         secsSinceLastPrint = 0;
       }
-      try {
-        Thread.sleep(1000);  // 1 sec
-      } catch (Exception e) {}
+      try { Thread.sleep(1000); } catch (Exception e) {}
       secsSinceLastPrint++;
     }  // while running
     System.out.println("MyThingie: Bye");
